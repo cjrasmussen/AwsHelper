@@ -1,0 +1,31 @@
+{
+  "name": "cjrasmussen/aws-helper",
+  "description": "Simple helper for some common interactions with the AWS SDK",
+  "version": "1.0.0",
+  "keywords": ["Amazon Web Services", "AWS"],
+  "homepage": "https://cjr.dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Clark Rasmussen",
+      "homepage": "https://cjr.dev",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/cjrasmussen/AwsHelper/issues",
+    "source": "https://github.com/cjrasmussen/AwsHelper"
+  },
+  "require": {
+    "php": ">=7.4.0",
+    "aws/aws-sdk-php": "^3.0.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "cjrasmussen\\AwsHelper\\": "src/"
+    }
+  }
+}
