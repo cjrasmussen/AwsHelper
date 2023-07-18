@@ -100,9 +100,11 @@ class S3
 		];
 
 		foreach ($files AS $file) {
-			$delete['Objects'][] = [
-				'Key' => $file,
-			];
+			if ($this->s3->doesObjectExistV2($bucket, $file)) {
+				$delete['Objects'][] = [
+					'Key' => $file,
+				];
+			}
 		}
 
 		return $this->s3->deleteObjects([
