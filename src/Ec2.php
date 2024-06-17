@@ -14,6 +14,16 @@ class Ec2
 	}
 
 	/**
+	 * Get the EC2Client back out of the helper class
+	 *
+	 * @return Ec2Client
+	 */
+	public function getClient(): Ec2Client
+	{
+		return $this->ec2;
+	}
+
+	/**
 	 * Get the status of a single EC2 instance by ID
 	 *
 	 * The instance does not have to be running to have its status returned.

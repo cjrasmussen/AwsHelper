@@ -24,4 +24,26 @@ class Aws
 			}
 		}
 	}
+
+	/**
+	 * Set the S3 client
+	 *
+	 * @param S3Client $s3
+	 * @return void
+	 */
+	public function setS3(S3Client $s3): void
+	{
+		$this->s3 = new S3($s3);
+	}
+
+	/**
+	 * Set the EC2 client
+	 *
+	 * @param Ec2Client $ec2
+	 * @return void
+	 */
+	public function setEc2(Ec2Client $ec2): void
+	{
+		$this->ec2 = new Ec2($ec2);
+	}
 }

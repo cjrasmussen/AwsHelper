@@ -16,6 +16,16 @@ class S3
 	}
 
 	/**
+	 * Get the S3Client back out of the helper class
+	 *
+	 * @return S3Client
+	 */
+	public function getClient(): S3Client
+	{
+		return $this->s3;
+	}
+
+	/**
 	 * Copy a specified file to an S3 bucket/path
 	 *
 	 * @param string $bucket
