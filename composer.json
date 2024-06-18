@@ -1,7 +1,7 @@
 {
   "name": "cjrasmussen/aws-helper",
   "description": "Simple helper for some common interactions with the AWS SDK",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": ["Amazon Web Services", "AWS"],
   "homepage": "https://cjr.dev",
   "license": "MIT",

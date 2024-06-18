@@ -84,8 +84,10 @@ class S3
 
 		$results = $this->s3->getPaginator('ListObjects', $args);
 		foreach ($results AS $result) {
-			foreach ($result['Contents'] AS $object) {
-				$output[] = $object;
+			if (is_array($result['Contents'])) {
+				foreach ($result['Contents'] AS $object) {
+					$output[] = $object;
+				}
 			}
 		}
 
