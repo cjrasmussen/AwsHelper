@@ -98,10 +98,10 @@ class S3
 	 * Delete a specified object (or array of objects) from a specified S3 bucket
 	 *
 	 * @param string $bucket
-	 * @param string|array $files
+	 * @param array|string $files
 	 * @return Result
 	 */
-	public function deleteObject(string $bucket, $files): Result
+	public function deleteObject(string $bucket, array|string $files): Result
 	{
 		if (!is_array($files)) {
 			$files = [$files];
